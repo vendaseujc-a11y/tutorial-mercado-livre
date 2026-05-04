@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo - Como Vender no Mercado Livre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ml-yellow': '#FFE600',
+                        'ml-blue': '#3483FA',
+                        'ml-dark': '#333333',
+                        'ml-light': '#F5F5F5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .progress-bar {
+            transition: width 0.3s ease;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .gold-card {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFE600 100%);
+            border-left: 4px solid #FFB800;
+        }
+        .section-content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .section-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans scroll-smooth">
+    <div class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="bg-gradient-to-r from-[#3483FA] to-[#2962FF] text-white px-3 py-1 rounded font-bold text-sm">
+                        ML
+                    </div>
+                    <h1 class="text-xl font-bold text-[#333333]">Guia Completo: Como Vender no Mercado Livre</h1>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <div class="w-48 bg-gray-200 rounded-full h-2">
+                        <div id="progressBar" class="progress-bar bg-[#3483FA] h-2 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <span id="progressText" class="text-sm text-gray-600">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-20 max-w-7xl mx-auto px-4 pb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-md p-4 sticky top-24">
+                    <h3 class="font-bold text-gray-800 mb-4 border-b pb-2">Índice</h3>
+                    <nav class="space-y-2">
+                        <a href="#section1" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="1">
+                            <i class="fas fa-user-plus mr-2"></i>1. Cadastro
+                        </a>
+                        <a href="#section2" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="2">
+                            <i class="fas fa-cog mr-2"></i>2. Configurações
+                        </a>
+                        <a href="#section3" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="3">
+                            <i class="fas fa-bullhorn mr-2"></i>3. Primeiro Anúncio
+                        </a>
+                        <a href="#section4" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="4">
+                            <i class="fas fa-shipping-fast mr-2"></i>4. Logística
+                        </a>
+                        <a href="#section5" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="5">
+                            <i class="fas fa-chart-line mr-2"></i>5. SEO para Mercado Livre
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 space-y-8">
+                <section id="section1" class="section-content bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Seção 1: Cadastro</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Conta Pessoal vs Conta Empresa</h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                    <h4 class="font-bold text-[#333333] mb-2"><i class="fas fa-user mr-2"></i>Conta Pessoal (PF)</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Ideal para vendas eventuais</li>
+                                        <li>• Documento: CPF</li>
+                                        <li>• Limite de anúncios limitado</li>
+                                        <li>• Sem necessidade de CNPJ</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                    <h4 class="font-bold text-[#333333] mb-2"><i class="fas fa-building mr-2"></i>Conta Empresa (PJ)</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Para negócios recorrentes</li>
+                                        <li>• Documento: CNPJ</li>
+                                        <li>• Anúncios ilimitados</li>
+                                        <li>• Emissão de notas fiscais</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#FFE600] bg-opacity-20 p-4 rounded-lg border border-[#FFE600]">
+                            <h4 class="font-bold text-[#333333] mb-2"><i class="fas fa-id-card mr-2"></i>Documentos Necessários</h4>
+                            <div class="grid md:grid-cols-2 gap-4 mt-3">
+                                <div>
+                                    <p class="font-semibold text-sm">Pessoa Física:</p>
+                                    <p class="text-sm text-gray-600">CPF, RG ou CNH válido</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Pessoa Jurídica:</p>
+                                    <p class="text-sm text-gray-600">CNPJ, contrato social, documentos dos sócios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Validação de Identidade</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 bg-[#3483FA] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">1</div>
+                                    <div>
+                                        <p class="font-medium">Acesse "Meus Dados" no Menu do Mercado Livre</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 bg-[#3483FA] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">2</div>
+                                    <div>
+                                        <p class="font-medium">Clique em "Verificar minha identidade"</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 bg-[#3483FA] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">3</div>
+                                    <div>
+                                        <p class="font-medium">Envie foto do documento (frente e verso) e uma selfie</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 bg-[#3483FA] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">4</div>
+                                    <div>
+                                        <p class="font-medium">Aguarde a aprovação (geralmente em 24-48h)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section2" class="section-content bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Seção 2: Configurações Iniciais</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Configurar Endereço de Envio</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                                    <li>Vá em <strong>Configurações > Endereços de envio</strong></li>
+                                    <li>Clique em <strong>"Adicionar novo endereço"</strong></li>
+                                    <li>Preencha CEP, rua, número, bairro, cidade e estado</li>
+                                    <li>Marque como <strong>endereço principal</strong></li>
+                                    <li>Defina o <strong>horário de retirada</strong> (se aplicável)</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Configurar Meio de Recebimento (Mercado Pago)</h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-[#3483FA] bg-opacity-10 p-4 rounded-lg border border-[#3483FA]">
+                                    <h4 class="font-bold text-[#3483FA] mb-2">Mercado Pago</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Recebimento instantâneo</li>
+                                        <li>• Taxa por venda: ~4,99%</li>
+                                        <li>• Saque para conta bancária</li>
+                                        <li>• Saldo pode ser usado em compras</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                    <h4 class="font-bold text-[#333333] mb-2">Configuração</h4>
+                                    <ol class="text-sm text-gray-700 space-y-1 list-decimal list-inside">
+                                        <li>Acesse Configurações</li>
+                                        <li>Selecione "Mercado Pago"</li>
+                                        <li>Ative "Receber pagamentos"</li>
+                                        <li>Configure limites de venda</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section3" class="section-content bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Seção 3: O Primeiro Anúncio</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Escolha da Categoria</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="text-gray-700 mb-3">A categoria correta é <strong>FUNDAMENTAL</strong> para o sucesso:</p>
+                                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                                    <li>Digite o nome do produto na barra de busca</li>
+                                    <li>O sistema sugerirá categorias</li>
+                                    <li>Selecione a mais específica possível</li>
+                                    <li>Evite categorias muito genéricas</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="gold-card p-4 rounded-lg">
+                            <h4 class="font-bold text-[#B45309] mb-2"><i class="fas fa-lightbulb mr-2"></i>Dica de Ouro</h4>
+                            <p class="text-[#333333]"><strong>Use títulos com menos de 60 caracteres</strong> - Titles muito longos são cortados nos resultados de busca.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Fotos do Produto</h3>
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="font-bold text-red-700 mb-2"><i class="fas fa-camera mr-2"></i>Regra das Fotos</h4>
+                                <p class="text-gray-700">O primeiro produto deve ter a <strong>primeira imagem com fundo branco puro (RGB 255, 255, 255)</strong>, sem logos ou marcas d'água.</p>
+                            </div>
+                            <ul class="mt-3 space-y-2 text-gray-700">
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Use fotos de alta resolução (mín. 800x800px)</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i> Tire fotos em diferentes ângulos</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i> Mostre detalhes e defeitos (se houver)</li>
+                                <li><i class="fas fa-times text-red-500 mr-2"></i> Evite fundo clutterado ou cores fortes</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Descrição do Produto</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p>Uma boa descrição deve conter:</p>
+                                <ul class="list-disc list-inside space-y-1 ml-2">
+                                    <li>Características principais</li>
+                                    <li>Dimensões e peso</li>
+                                    <li>Material de fabricação</li>
+                                    <li>Modo de uso</li>
+                                    <li>Garantia e suporte</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gold-card p-4 rounded-lg">
+                            <h4 class="font-bold text-[#B45309] mb-2"><i class="fas fa-star mr-2"></i>Dica de Ouro - Reputação</h4>
+                            <p class="text-[#333333]">A cor da reputação <strong>só aparece após as primeiras 10 vendas</strong>. Mantenha uma taxa de resposta acima de 90% e envie os produtos no prazo para alcançar a reputação "MercadoLíder".</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section4" class="section-content bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Seção 4: Logística</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Mercado Envios</h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-[#333333] mb-2">Mercado Envios Standard</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Prazo: 2-5 dias úteis</li>
+                                        <li>• Rastreamento automático</li>
+                                        <li>• Sem custo adicional para o comprador</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-[#333333] mb-2">Mercado Envios Full</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Armazenagem no centro de distribuição</li>
+                                        <li>• Entrega mais rápida</li>
+                                        <li>• Maior visibilidade no ML</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#3483FA] bg-opacity-10 p-4 rounded-lg border border-[#3483FA]">
+                            <h4 class="font-bold text-[#3483FA] mb-2">Configuração do Envio</h4>
+                            <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                                <li>No seu anúncio, selecione <strong>"Mercado Envios"</strong></li>
+                                <li>Escolha entre Standard ou Full</li>
+                                <li>Informe as dimensões e peso do produto</li>
+                                <li>O sistema calculará automaticamente o frete</li>
+                            </ol>
+                        </div>
+
+                        <div class="gold-card p-4 rounded-lg">
+                            <h4 class="font-bold text-[#B45309] mb-2"><i class="fas fa-box-open mr-2"></i>Dica de Ouro - Embalagem</h4>
+                            <p class="text-[#333333]">Use caixa apropriada ao tamanho do produto. Preencha todos os espaços vazios com papel bolha ou isopor para evitar danos durante o transporte.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section5" class="section-content bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Seção 5: SEO para Mercado Livre</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-[#FFE600] bg-opacity-20 p-4 rounded-lg border border-[#FFE600]">
+                            <p class="text-[#333333] font-medium">Como trabalhar com marketing digital e criação de conteúdo, aprender a usar termos que aparecem nas buscas orgânicas da plataforma é essencial para aumentar suas vendas!</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Como o SEO funciona no Mercado Livre?</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-search text-[#3483FA] mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">O algoritmo prioriza relevância + performance</p>
+                                        <p class="text-sm text-gray-600">Produtos com boas vendas e boas métricas aparecen primeiro</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-tags text-[#3483FA] mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">Palavras-chave no título são fundamentais</p>
+                                        <p class="text-sm text-gray-600">Coloque termos de busca no início do título</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-percentage text-[#3483FA] mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">Preço competitivo influencia o ranking</p>
+                                        <p class="text-sm text-gray-600">Produtos bem precificados aparecem mais</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Estrutura de Título SEO</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="text-gray-700 mb-3"><strong>Formato ideal:</strong> [Palavra-chave principal] + [Marca/Modelo] + [Características]</p>
+                                <div class="mt-3">
+                                    <p class="text-sm font-semibold text-gray-600">Exemplo BOM:</p>
+                                    <p class="text-green-600 font-medium">Fone de Ouvido Bluetooth Sem Fio Sony WH-1000XM4 Original</p>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="text-sm font-semibold text-gray-600">Exemplo RUIM:</p>
+                                    <p class="text-red-600 font-medium">Fone top najashdjkaushd aksjdhaskjdh</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3483FA] mb-3">Palavras-chave na Descrição</h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <p class="font-semibold text-gray-700">Use termos de busca natural:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• "ideal para..."</li>
+                                        <li>• "perfeito para..."</li>
+                                        <li>• "indicado para..."</li>
+                                        <li>• "especial para..."</li>
+                                    </ul>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="font-semibold text-gray-700">Evite repetição excessiva:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Não use a mesma palavra 10x</li>
+                                        <li>• Evite texto "spammy"</li>
+                                        <li>• Mantenha naturalidade</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gold-card p-4 rounded-lg">
+                            <h4 class="font-bold text-[#B45309] mb-2"><i class="fas fa-rocket mr-2"></i>Dica de Performance</h4>
+                            <p class="text-[#333333]">Use a ferramenta "Análises" do Mercado Livre para ver quais termos os compradores usam para encontrar produtos similares ao seu. Ajuste seu título e descrição baseado nesses dados!</p>
+                        </div>
+
+                        <div class="bg-[#3483FA] bg-opacity-10 p-4 rounded-lg border border-[#3483FA]">
+                            <h4 class="font-bold text-[#3483FA] mb-3">Checklist SEO</h4>
+                            <div class="grid md:grid-cols-2 gap-3">
+                                <label class="flex items-center gap-2 text-gray-700">
+                                    <input type="checkbox" class="w-4 h-4 text-[#3483FA]">
+                                    <span class="text-sm">Título com palavra-chave principal</span>
+                                </label>
+                                <label class="flex items-center gap-2 text-gray-700">
+                                    <input type="checkbox" class="w-4 h-4 text-[#3483FA]">
+                                    <span class="text-sm">Descrição com termos de busca</span>
+                                </label>
+                                <label class="flex items-center gap-2 text-gray-700">
+                                    <input type="checkbox" class="w-4 h-4 text-[#3483FA]">
+                                    <span class="text-sm">Categoria específica definida</span>
+                                </label>
+                                <label class="flex items-center gap-2 text-gray-700">
+                                    <input type="checkbox" class="w-4 h-4 text-[#3483FA]">
+                                    <span class="text-sm">Fotos de qualidade</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="bg-[#3483FA] text-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-xl font-bold mb-2">Pronto para vender!</h3>
+                    <p class="mb-4">Siga este guia passo a passo e comece suas vendas no Mercado Livre hoje mesmo.</p>
+                    <a href="#" class="inline-block bg-[#FFE600] text-[#333333] px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition">
+                        Criar minha conta agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#333333] text-white py-6 mt-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm">Guia completo baseado nas diretrizes oficiais do Mercado Livre.</p>
+            <p class="text-xs mt-2 text-gray-400">Este não é um site oficial do Mercado Livre.</p>
+        </div>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    const sectionId = entry.target.id.replace('section', '');
+                    const totalSections = 5;
+                    const progress = (sectionId / totalSections) * 100;
+                    
+                    progressBar.style.width = progress + '%';
+                    progressText.textContent = Math.round(progress) + '%';
+
+                    navLinks.forEach(link => {
+                        link.classList.remove('bg-[#3483FA]', 'text-white');
+                        if (link.dataset.section === sectionId) {
+                            link.classList.add('bg-[#3483FA]', 'text-white');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
