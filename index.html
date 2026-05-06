@@ -56,9 +56,10 @@
                         <a href="#section2" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="2"><i class="fas fa-cog mr-2"></i>2. Configurações</a>
                         <a href="#section3" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="3"><i class="fas fa-bullhorn mr-2"></i>3. Primeiro Anúncio</a>
                         <a href="#section4" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="4"><i class="fas fa-shipping-fast mr-2"></i>4. Logística</a>
-                        <a href="#section5" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="5"><i class="fas fa-chart-line mr-2"></i>5. SEO para Mercado Livre</a>
-                        <a href="#section6" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="6"><i class="fas fa-trophy mr-2"></i>6. 10 Primeiras Vendas</a>
-                        <a href="#section7" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="7"><i class="fas fa-rocket mr-2"></i>7. Ser PRO</a>
+                        <a href="#section5" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="5"><i class="fas fa-chart-line mr-2"></i>5. SEO</a>
+                        <a href="#section6" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="6"><i class="fas fa-rocket mr-2"></i>6. Ser PRO</a>
+                        <a href="#section7" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="7"><i class="fas fa-trophy mr-2"></i>7. 10 Primeiras Vendas</a>
+                        <a href="#section8" class="block py-2 px-3 rounded hover:bg-[#3483FA] hover:text-white transition nav-link" data-section="8"><i class="fas fa-bullhorn mr-2"></i>8. CTA Final</a>
                     </nav>
                 </div>
             </div>
@@ -366,8 +367,8 @@
 
                 <section id="section6" class="section-content bg-white rounded-lg shadow-md p-6">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-trophy"></i></div>
-                        <h2 class="text-2xl font-bold text-[#333333]">Faça as 10 Primeiras Vendas da Forma Correta</h2>
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-rocket"></i></div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Ser PRO: Continue Aprendendo</h2>
                     </div>
                     <div class="space-y-6">
                         <div class="bg-green-50 p-4 rounded-lg border border-green-200">
@@ -479,12 +480,12 @@
 
                 <section id="section7" class="section-content bg-white rounded-lg shadow-md p-6">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-rocket"></i></div>
-                        <h2 class="text-2xl font-bold text-[#333333]">Ser PRO: Continue Aprendendo</h2>
+                        <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-trophy"></i></div>
+                        <h2 class="text-2xl font-bold text-[#333333]">Faça as 10 Primeiras Vendas da Forma Correta</h2>
                     </div>
                     <div class="space-y-6">
-                        <div class="bg-[#FFE600] bg-opacity-20 p-4 rounded-lg border border-[#FFE600]">
-                            <p class="text-[#333333] font-medium">Quer levar suas vendas no Mercado Livre para outro nível? Estes são os próximos passos para se tornar um vendedor PRO!</p>
+                        <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                            <p class="text-gray-700 font-medium">As suas primeiras 10 vendas são fundamentais para definir o sucesso da sua conta. Evite erros que podem resultar em warnings, suspensões ou bloqueios definitivos.</p>
                         </div>
 
                         <div class="grid md:grid-cols-2 gap-4">
@@ -553,7 +554,7 @@
                     </div>
                 </section>
 
-                <section id="section7" class="section-content bg-white rounded-lg shadow-md p-6">
+                <section id="section8" class="section-content bg-white rounded-lg shadow-md p-6">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-12 bg-[#3483FA] rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-trophy"></i></div>
                         <h2 class="text-2xl font-bold text-[#333333]">Faça as 10 Primeiras Vendas da Forma Correta</h2>
@@ -699,7 +700,7 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                     const sectionId = entry.target.id.replace('section', '');
-                    const totalSections = 7;
+                    const totalSections = 8;
                     const progress = (sectionId / totalSections) * 100;
                     progressBar.style.width = progress + '%';
                     progressText.textContent = Math.round(progress) + '%';
